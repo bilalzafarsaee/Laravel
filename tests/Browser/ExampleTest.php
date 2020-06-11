@@ -14,7 +14,7 @@ class ExampleTest extends DuskTestCase
             $browser->visit('/packages')
                     ->type('name', 'Bronze')
                     ->type('price', '500')
-                    ->click('@form-submi')
+                    ->click('@form-submit')
                     ->assertPathIs('/createPackage');
         });
     }
